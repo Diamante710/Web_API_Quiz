@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Web API Code Quiz</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="high-scores">High Scores</h1>
+        <h1 id="timer">Timer: </h1>
+    </header>
+
+    <section id="start">
+        <h2>Web APIs: Coding Quiz</h2>
+        <p>Do your best to answer the following questions on coding.
+            If you answer correctly, you will be awarded two points! 
+            If you answer incorrectly, your time will be reduced by two seconds.
+            Can you get the new high score before time is up?!
+        </p>
+        <button id="begin-quiz" class="btn">Begin Quiz</button>
+    </section>
+
+    <section id="questions">
+        <button id="answers" class="btn-list"></button>
+    </section> 
+
+    <section id="new-score">
+        <h3>Quiz Complete!</h3>
+    </section>
+            <article id="initials">
+                <p>Enter Initials: 
+                    <input type="text">
+                    <button id="sumbit-score" class="submit-btn">Submit</button>
+                </p>
+            </article>
+    </section>
+
+    <section id="champions">
+        <h4>High Score Champions</h4>
+        <ol id="score-list"></ol>
+    <article id="buttons">
+        <button id="return">Go Back</button>
+        <button id="clear-scores">Clear All Scores</button>
+    </article>
+    </section>
+
+    <section id="correct">
+        <h5>You're Correct!</h5>
+    </section>
+    <section id="incorrect">
+        <h5>You're Incorrect!</h5>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>

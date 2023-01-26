@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Code Quiz: Web APIs</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="high-scores">High Scores</h1>
+        <h1 id="timer">Timer: </h1>
+    </header>
+
+    <div id="first-page" class="show">
+        <section id="start-page">
+            <h2>Web APIs Coding Quiz</h2>
+            <p>Do your best to answer the following questions on coding.
+                If you answer correctly, you will be awarded two points!
+                If you answer incorrectly, your time will be reduced by two seconds.
+                Can you get the new high score before time is up?!
+            </p>
+            <button id="begin-quiz" class="start-btn">Begin Quiz</button>
+        </section>
+    </div>
+
+    <section id="quiz-page" class="hide">
+        <div id="questions"></div>
+        <div id="answers-list" class="btn-list"></div>
+    </section>
+
+    <div id="post-quiz" class="hide">
+        <section id="last-page">
+            <div id="record-score">
+                <h3>Quiz Complete!</h3>
+            </div>
+        </section>
+
+        <form id="submition-page" class="initals">
+            <p>Enter Initials:
+                <input type="text" id="initals">
+                <button id="sumbit-score" class="btn">Submit</button>
+            </p>
+        </form>
+    </div>
+
+    <section id="champions" class="hide">
+        <div id="high-scores">
+            <h4>High Score Champions</h4>
+            <ol id="score-list"></ol>
+            <div id="buttons">
+                <button id="return" class="enter-btn">Go Back</button>
+                <button id="clear-scores" class="enter-btn">Clear All Scores</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="correct" class="hide">
+        <h5>You're Correct!</h5>
+    </section>
+    <section id="incorrect" class="hide">
+        <h5>You're Incorrect!</h5>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

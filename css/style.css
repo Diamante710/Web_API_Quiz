@@ -10,6 +10,16 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+a {
+    color: #563d7c;
+    text-decoration: none;
+    transition: color 0.1s;
+}
+
+a:hover {
+    color: #8570a5;
+}
+
 /* styling for high score and timer headers */
 header {
     display: flex;
@@ -25,18 +35,18 @@ header {
 }
 
 /* container styling is focused on text alignment and boundaries */
-#first-page {
+#start-page {
     padding: 20px;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     margin: auto;
     text-align: center;
 }
 
 /* styles only the first page text content */
-#start {
+.start {
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
 
 /* h2 applies the title of the quiz */
@@ -46,29 +56,17 @@ h2 {
 }
 
 /* this focuses on the body of the first page text element */
-#start p {
+.start p {
     font-size: 30px;
     font-style: italic;
+    text-align: enter;
 }
 
-/* begin-quiz styles the button on first page */
-#begin-quiz {
-    background: whitesmoke;
-    color: black;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0 3px grey;
-    margin-top: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    width: 25%;
+.main-container {
+    margin: 100px auto 0 auto;
+    max-width: 600px;
 }
 
-#begin-quiz:hover {
-    cursor: pointer;
-    color: aqua;
-}
 
 /* refers to container for each question and answer page */
 #questions {
@@ -78,9 +76,26 @@ h2 {
     margin: auto;
 }
 
+button {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 100%;
+    background-color: #563d7c;
+    border-radius: 5px;
+    padding: 2px 10px;
+    color: white;
+    border: 0;
+    transition: background-color 0.1s;
+}
+
+#start {
+    font-size: 30px;
+}
+
 /* styles the multiple choice answer buttons for each question */
-.btn-list {
-    display: grid;
+.choices button {
+    display: inline-block;
     grid-template-rows: repeat(4, auto);
     grid-gap: 5px;
     margin: 20px 0;
@@ -89,7 +104,7 @@ h2 {
 }
 
 /* refers to user submission of new high score page*/
-#new-score {
+#submit {
     font-size: 25px;
     text-align: center;
     color: grey;
@@ -105,8 +120,52 @@ h3 {
     padding-top: 5px;
 }
 
-/* hides elements from inital start page until prompted */
+input[type="text"] {
+    font-size: 100%;
+}
+
 .hide {
     display: none;
 }
 
+.start {
+    text-align: left;
+}
+
+#high-scores {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    font-size: 30px;
+}
+
+#timer {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    font-size: 30px;
+}
+
+ol {
+    padding-left: 0px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+li {
+    padding: 5px;
+    list-style: decimal inside none;
+}
+
+li:nth-child(odd) {
+    background-color: #f3edfc;
+}
+
+.feedback {
+    font-style: italic;
+    font-size: 120%;
+    margin-top: 20px;
+    padding-top: 10px;
+    color: gray;
+    border-top: 2px solid #ccc;
+}

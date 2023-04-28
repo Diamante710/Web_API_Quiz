@@ -5,67 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Code Quiz: Web APIs</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Web APIs Coding Quiz</title>
 </head>
 
 <body>
     <header>
-        <h1 id="high-scores">High Scores</h1>
-        <h1 id="timer">Timer: </h1>
+        <div id="high-scores"><a href="highscores.html">View High Scores</a></div>
+        <div id="timer">Timer: <span id="time">0</span></div>
     </header>
 
-    <div id="first-page" class="show">
-        <section id="start-page">
+    <div class="main-container">
+        <div id="start-page" class="start">
             <h2>Web APIs Coding Quiz</h2>
-            <p>Do your best to answer the following questions on coding.
+            <p>
+                Do your best to answer the following questions on coding.
                 If you answer correctly, you will be awarded two points!
-                If you answer incorrectly, your time will be reduced by two seconds.
+                If you answer incorrectly, your time will be reduced by five seconds.
                 Can you get the new high score before time is up?!
             </p>
-            <button id="begin-quiz" class="start-btn">Begin Quiz</button>
-        </section>
-    </div>
-
-    <section id="quiz-page" class="hide">
-        <div id="questions"></div>
-        <div id="answers-list" class="btn-list"></div>
-    </section>
-
-    <div id="post-quiz" class="hide">
-        <section id="last-page">
-            <div id="record-score">
-                <h3>Quiz Complete!</h3>
-            </div>
-        </section>
-
-        <form id="submition-page" class="initals">
-            <p>Enter Initials:
-                <input type="text" id="initals">
-                <button id="sumbit-score" class="btn">Submit</button>
-            </p>
-        </form>
-    </div>
-
-    <section id="champions" class="hide">
-        <div id="high-scores">
-            <h4>High Score Champions</h4>
-            <ol id="score-list"></ol>
-            <div id="buttons">
-                <button id="return" class="enter-btn">Go Back</button>
-                <button id="clear-scores" class="enter-btn">Clear All Scores</button>
-            </div>
+            <button id="start">Begin Quiz</button>
         </div>
-    </section>
 
-    <section id="correct" class="hide">
-        <h5>You're Correct!</h5>
-    </section>
-    <section id="incorrect" class="hide">
-        <h5>You're Incorrect!</h5>
-    </section>
+        <div id="questions" class="hide">
+            <h2 id="question-title"></h2>
+            <div id="questions"></div>
+            <div id="choices" class="choices"></div>
+        </div>
 
-    <script src="./script.js"></script>
+    <div id="post-quiz" class="hide">>
+        <h3>Quiz Complete!</h3>
+        <p>Your Final Score is <span id="final-score"></span></p>
+        <p>
+            Enter Initials:
+            <input type="text" id="initials" max="3" />
+            <button id="submit">Submit New Score</button>
+        </p>
+    </div>
+
+    <div id="feedback" class="feedback hide"></div>
+    </div>
+
+    <script src="./js/questions.js"></script>
+    <script src="./js/functions.js"></script>
 </body>
 
 </html>

@@ -19,7 +19,8 @@ SO THAT I can gauge my progress compared to my peers
 
 ## <a name="Mock Up"></a>Mock Up
 
-![Screenshot Capture - 2023-02-24 - 14-08-52](https://user-images.githubusercontent.com/120080703/221292720-56e0daad-eb72-40c7-b021-390e574a0d8b.jpg)
+![quiz](https://user-images.githubusercontent.com/120080703/235066913-1489e93b-0cfd-4e9d-a77c-ed222e7bc272.jpg)
+![quiz2](https://user-images.githubusercontent.com/120080703/235066927-f4c7445b-3394-4a76-8617-7e06553f40de.jpg)
 
 ## <a name="Contact Information"></a>Contact Information
 
